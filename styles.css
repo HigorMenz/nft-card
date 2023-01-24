@@ -1,17 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: hsl(217, 54%, 11%);
+  background-color: hsl(217, 54%, 11%);
 
 }
 
 .card-container {
 
+  min-height: 100vh;
+  display: inline-grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin: -1rem 0 0 -1rem;
+}
+
+.card {
+  width: 20rem;
+  height: 32rem;
+  background: #fff;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  background-color: hsl(216, 50%, 16%);
+
+}
+
+.card .card-img img {
+  width: 17rem;
+  height: 17rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+
+.card-text {
+  margin: 1rem 1.5rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card .text-top {
+  color: hsl(0, 0%, 100%);
+}
+
+.card .text-bot {
+  margin-top: 0.8rem;
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+}
+
+.icon-container {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+
+
+}
+
+.eth-icons {
+  display: flex;
+  align-items: center;
+}
+
+.view-icons {
+  margin-left: 5rem;
+  display: flex;
+}
+.view-icons img{
+  height: 18px;
+  width: 18px;
+}
+
+.eth-text {
+
+  color: hsl(178, 100%, 50%);
+  font-family: 'Outfit', sans-serif;
+  margin-left: 0.4rem;
+  font-size: 14px;
+
+
+}
+
+.view-text {
+  margin-right: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+  height: -4rem;
+  width: 16.70rem;
+  border-radius: 50%;
+  border: 1px solid hsla(215, 52%, 70%, 0.39);
+
+}
+
+.creator {
+  margin-left: 1.5rem;
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.creator img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#created-by {
+  margin-left: 0.5rem;
+  color: hsla(215, 52%, 70%, 0.63);
+  font-family: 'Outfit', sans-serif;
+}
+
+#name-creator {
+  margin-left: 0.2rem;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Outfit', sans-serif;
+}
+
+@media(max-width:375px) {
+  .card-container {
     min-height: 100vh;
     display: inline-grid;
     flex-direction: row;
@@ -21,103 +140,119 @@ body {
     left: 50%;
     right: 50%;
     margin: -1rem 0 0 -1rem;
-}
+  }
 
-.card {
-    width: 20rem;
-    height: 32rem;
+  .card {
+    width: 15rem;
+    height: 24rem;
     background: #fff;
     border-radius: 1rem;
     margin-left: 1rem;
     background-color: hsl(216, 50%, 16%);
+  }
 
-}
 
-.card .card-img img {
-    width: 17rem;
-    height: 17rem;
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
+  .card .card-img img {
+    width: 13rem;
+    height: 13rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
     border-radius: 1rem;
-}
+    
+    position: relative;
+  }
 
-.card-text {
-    margin: 1rem 1.5rem;
+  .card-text {
+    margin: 0.2rem 1rem;
     font-family: 'Outfit', sans-serif;
-    ;
-}
+  }
 
-.card .text-top {
+
+  .card .text-top {
     color: hsl(0, 0%, 100%);
-}
-
-.card .text-bot {
-    margin-top: 0.8rem;
+  }
+  .card .text-bot {
+    margin-top: 0.3rem;
     color: hsl(215, 51%, 70%);
-    font-size: 16px;
-}
-
-.icon-container {
-    margin-left: 1.5rem;
+    font-size: 12px;
+  }
+  .icon-container {
+    margin-left: 1rem;
     display: flex;
     align-items: center;
-   
-    
-}
-
-.eth-icons{
+  
+  
+  }
+  
+  .eth-icons {
     display: flex;
     align-items: center;
-}
-
-.view-icons{
-    margin-left: 5rem;
+    margin-top: 0.5rem;
+  }
+  .eth-icons img{
+      height: 15px;
+      width: 10px;
+  }
+  
+  .view-icons {
+    margin-left: 4.5rem;
+    align-items: center;
     display: flex;
-    
-    
-}
-.eth-text {
-    
+  }
+  .view-icons img{
+    height: 15px;
+    width: 15px;
+  }
+  
+  .eth-text {
+  
     color: hsl(178, 100%, 50%);
     font-family: 'Outfit', sans-serif;
-    margin-left: 0.4rem;
-    font-size: 14px;
-
-
-}
-
-.view-text {
-    margin-right: 1.5rem;
+    font-size: 11px;
+  }
+  
+  .view-text {
+    margin-right: rem;
     font-family: 'Outfit', sans-serif;
     color: hsl(215, 51%, 70%);
-}
-hr {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-top: 1rem;
+    font-size: 10px;
+  }
+  
+  hr {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
     height: -4rem;
-    width: 16.70rem;
+    width: 13rem;
     border-radius: 50%;
     border: 1px solid hsla(215, 52%, 70%, 0.39);
-    
-}
-.creator{
-    margin-left: 1.5rem;
+  
+  }
+  
+  .creator {
+    margin-left: 1rem;
     margin-top: 0.7rem;
     display: flex;
     align-items: center;
-}
-.creator img{
+  }
+  
+  .creator img {
     width: 2rem;
     height: 2rem;
-}
-#created-by{
+  }
+  
+  #created-by {
     margin-left: 0.5rem;
     color: hsla(215, 52%, 70%, 0.63);
     font-family: 'Outfit', sans-serif;
-}
-#name-creator{
+    font-size: 12px;
+  }
+  
+  #name-creator {
     margin-left: 0.2rem;
     color: hsl(0, 0%, 100%);
     font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+  }
+  
 }
